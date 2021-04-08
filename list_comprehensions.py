@@ -25,18 +25,19 @@ uppercased_fruits = [x.upper() for x in fruits]
 # Exercise 2 - create a variable named capitalized_fruits and use list comprehension syntax to produce output like ['Mango', 'Kiwi', 'Strawberry', etc...]
 capitalized_fruits = [x.capitalize() for x in fruits]
 # Exercise 3 - Use a list comprehension to make a variable named fruits_with_more_than_two_vowels. Hint: You'll need a way to check if something is a vowel.
-vowels = ['a', 'e', 'i', 'o', 'u']
-fruits_with_more_than_two_vowels = 
+fruit1 = 'mango'
+len([letter for letter in fruit1 if letter in 'aeiou'])
 # Exercise 4 - make a variable named fruits_with_only_two_vowels. The result should be ['mango', 'kiwi', 'strawberry']
-
+fruits_with_more_than_two_vowels
+[fruit for fruit in fruits if len([letter for letter in fruit if letter in 'aeiou']) == 2]
 # Exercise 5 - make a list that contains each fruit with more than 5 characters
-
+[fruit for fruit in fruits if len(fruit) > 5]
 # Exercise 6 - make a list that contains each fruit with exactly 5 characters
-
+[fruit for fruit in fruits if len(fruit) == 5]
 # Exercise 7 - Make a list that contains fruits that have less than 5 characters
 [fruit for fuit in fruits if len(fruit) <= 4]
 # Exercise 8 - Make a list containing the number of characters in each fruit. Output would be [5, 4, 10, etc... ]
-
+[len(fuit) for fruit in fruits]
 # Exercise 9 - Make a variable named fruits_with_letter_a that contains a list of only the fruits that contain the letter "a"
 fruits_with_letter_a = [fruit for fruit in fruits if 'a' in fruit]
 # Exercise 10 - Make a variable named even_numbers that holds only the even numbers 
