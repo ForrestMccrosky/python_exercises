@@ -155,15 +155,15 @@ books_read = [
     
 {'Title': 'Harry Potter and The Goblet of Fire', 
  'Author': "J.K. Rowling", 
- "Genre": ["Fantasy", "Suspense", "Mystery"]
+ "Genre": "Fantasy"
 },
 {'Title': 'Charlie and The Chocolate Factory',
  'Author': 'Roald Dahl',
- 'Genre': ['Fantasy', 'Science Fiction', 'Classic']
+ 'Genre': 'Fantasy'
 },
 {'Title': 'Alex Rider: Ark Angel',
  'Author': 'Anthony Horowitz',
- 'Genre': ['Fiction', 'Suspense-Thriller', 'Mystery']
+ 'Genre': 'Fiction'
 }
 ]
 

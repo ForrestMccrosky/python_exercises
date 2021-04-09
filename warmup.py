@@ -49,5 +49,6 @@ cars = [
 
 for car in cars:
     car['model'] = car['model'].upper()
+    car['make'] = car['make'].upper()
     
 print(cars)
