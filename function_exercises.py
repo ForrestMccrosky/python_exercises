@@ -232,7 +232,4 @@ def normalize_name(string):
         # returning the new python normalized string
         return string
 
-print(normalize_name(' HEllo #WORLD this is now a file name')
-
-
-
+print(normalize_name(' HEllo #WORLD this is now a file name'))
