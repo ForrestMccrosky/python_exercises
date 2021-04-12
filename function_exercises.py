@@ -169,6 +169,33 @@ def remove_vowels(string):
 print(remove_vowels('Hello World Get Rid of my vowels'))
 
 print('---------------------------------------------------------------')
+
+print('Exercise 11')
+
+
+def cumulative_list(nlist):
+    """
+    This function takes a list of numbers and returns a new list of their cummulative sums starting with the first number and
+    adding each successive number
+    """
+    # assinging a new empty list to be used to create the new cumulative list to be returned at the end of the function
+    new_list = []
+    # assinging a length variable that will used to reference indexes
+    length = len(nlist)
+    # creating a new list using the sum function 
+    # also uses slicing to acces the elements from the start to the index + 1 element
+    # and list comprehension is used to loop through the inputed string using x
+    new_list = [sum(nlist[0:x:1]) for x in range(0, length +1)]
+    # returning the new list at index of 1 and so on because the new list is the correctly summed/cumulative list
+    return new_list[1:]
+numbers = [1,1,1]
+print(cumulative_list(numbers))
+
+numbers2 = [1,2,3,4]
+print(cumulative_list(numbers2))
+
+print('---------------------------------------------------------------')
+
 print('Exercise 10')
 # Creating a function that removes all alphanumeric characters except spaces
 def remove_special(string):
@@ -207,28 +234,5 @@ def normalize_name(string):
 
 print(normalize_name(' HEllo #WORLD this is now a file name')
 
-print('---------------------------------------------------------------')
-
-print('Exercise 11')
 
 
-def cumulative_list(nlist):
-    """
-    This function takes a list of numbers and returns a new list of their cummulative sums starting with the first number and
-    adding each successive number
-    """
-    # assinging a new empty list to be used to create the new cumulative list to be returned at the end of the function
-    new_list = []
-    # assinging a length variable that will used to reference indexes
-    length = len(nlist)
-    # creating a new list using the sum function 
-    # also uses slicing to acces the elements from the start to the index + 1 element
-    # and list comprehension is used to loop through the inputed string using x
-    new_list = [sum(nlist[0:x:1]) for x in range(0, length +1)]
-    # returning the new list at index of 1 and so on because the new list is the correctly summed/cumulative list
-    return new_list[1:]
-numbers = [1,1,1]
-print(cumulative_list(numbers))
-
-numbers2 = [1,2,3,4]
-print(cumulative_list(numbers2))
