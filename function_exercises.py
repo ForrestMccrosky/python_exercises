@@ -205,7 +205,7 @@ def remove_special(string):
     new_string = ''
     for x in string:
         # Checking to see if the character at x is alphanumeric or a space
-        if x.isalnum() or x == ' ':
+        if x.isalnum() or x == ' ' or x == '.':
             #forming a new string with each x (character) that is not an alphanumeric character but retaining all spaces
             new_string += x
             # returning the newly edited string
