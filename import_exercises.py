@@ -175,6 +175,32 @@ print(fruits.most_common(1))
 
 print('Since we have a simple list with only three values we can') 
 print('also see that the least common fruit is Apples at 4')
+
+print('')
+
+all_unreads = sum([int(''.join([val for val in users['greeting'] if val.isdigit()])) for users in my_dict])
+
+my_dict[0]['greeting']
+messages = []
+for letter in my_dict[0]['greeting']:
+    if letter.isdigit():
+        messages.append(letter)
+        
+message_number = ''.join(messages)
+numberz = int(message_number)
+
+list_of_unreads = []
+for user in my_dict:
+    messages = []
+    for message in user['greeting']:
+        if message.isdigit():
+            messages.append(message)
+    message_number = ''.join(messages)
+    numberz = int(message_number)
+    list_of_unreads.append(numberz)
+    
+all_unread_messages = sum(list_of_unreads)
+print(f'Total unread messages: {all_unread_messages}')
         
         
 
